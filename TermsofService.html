@@ -1,0 +1,409 @@
+<!doctype html>
+<!--
+  ============================================================================
+  BEFORE YOU PUBLISH THIS FILE — replace every placeholder below.
+  The same values appear in Weatherized/Features/Settings/LegalDocuments.swift
+  (LegalConfiguration); keep the two in step or the in-app text and the hosted
+  text will disagree, which reviewers do notice.
+
+    1. the Weatherized team     -> the legal entity that operates the app
+                                   (a company name and registered address, or
+                                   your own name if you publish as an
+                                   individual).
+    2. gaston.coinbase@gmail.com  -> a mailbox you actually read. App Store
+                                   Guideline 1.2 requires published contact
+                                   information for an app with user content,
+                                   and requires you to act on reports.
+    3. Spain                    -> the jurisdiction whose law governs.
+    4. 10 September 2026        -> the date you publish, if it is not today.
+
+  Hosting: any static host works. App Store Connect needs a public HTTPS URL
+  that loads without a login. Give the English URL for the English
+  localization and append ?lang=es for the Spanish one.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Weatherized</title>
+<meta name="description" content="The agreement between you and Weatherized: what the app does, the community rules, and the limits of what it promises.">
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --ink: #16181d;
+  --ink-soft: #4a4f5a;
+  --ink-faint: #767c88;
+  --rule: #e3e6eb;
+  --accent: #2f6fd0;
+  --accent-soft: #eaf1fc;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --card: #171a20;
+    --ink: #eceef2;
+    --ink-soft: #b6bcc7;
+    --ink-faint: #858c99;
+    --rule: #272b33;
+    --accent: #7fb0ff;
+    --accent-soft: #1a2333;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.topbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--card);
+}
+
+.topbar-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.brand svg { width: 26px; height: 26px; flex: none; }
+
+.langswitch {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.langswitch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.langswitch button[aria-pressed="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 40px 22px 64px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.effective {
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  margin: 0 0 28px;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  margin: 0 0 40px;
+}
+
+h2 {
+  font-size: 1.18rem;
+  letter-spacing: -0.01em;
+  margin: 40px 0 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+
+h2:first-of-type { border-top: 0; padding-top: 0; }
+
+p { margin: 0 0 14px; }
+
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+a { color: var(--accent); }
+
+strong { font-weight: 650; }
+
+.callout {
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 0 0 14px;
+}
+
+.callout p:last-child { margin-bottom: 0; }
+
+footer {
+  border-top: 1px solid var(--rule);
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+}
+
+.footer-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+[hidden] { display: none !important; }
+
+@media print {
+  .topbar, footer { display: none; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  main { padding: 0; max-width: none; }
+  h2 { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="21" cy="12" r="6" fill="#f5c34b"/>
+        <path d="M9 24a5.5 5.5 0 0 1 .6-11 7.5 7.5 0 0 1 14.2 2A4.6 4.6 0 0 1 23 24z" fill="#cfd8e6"/>
+      </svg>
+      <span>Weatherized</span>
+    </div>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-set-lang="es" aria-pressed="false">Español</button>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ======================= ENGLISH ======================= -->
+<article data-lang="en">
+
+<h1>Terms of Service</h1>
+<p class="effective">Effective 10 September 2026</p>
+
+<p class="intro">These terms are the agreement between you and the Weatherized team for using Weatherized. By using the app you accept them.</p>
+
+<h2>What the app does</h2>
+<p>Weatherized suggests what to wear based on a weather forecast and the wardrobe you describe to it. Suggestions are exactly that — suggestions. They are not safety advice, and they are not a substitute for your own judgement about conditions where you are.</p>
+
+<h2>Weather information</h2>
+<p>Forecasts come from Apple Weather via WeatherKit. Forecasts are predictions and are often wrong. Do not rely on this app for decisions where weather could affect your safety — check an official meteorological service.</p>
+<p>When a forecast cannot be retrieved, the app clearly labels what it shows as a simulated forecast. Simulated forecasts are illustrative only and bear no relation to actual conditions.</p>
+
+<h2>Health features are not medical advice</h2>
+<p>Cycle-aware suggestions adjust clothing warmth only. They are not a contraceptive aid, not a diagnostic tool, and not medical advice. Do not use this app to make health decisions. Talk to a qualified professional.</p>
+
+<h2>Your account</h2>
+<p>Keep your password to yourself and let us know if you think someone else has it. You are responsible for what happens under your account. You must be old enough to form a binding contract where you live, and at least 13 years old, or the minimum age in your country if that is higher.</p>
+
+<h2>Your content</h2>
+<p>You keep ownership of everything you post. By sharing an outfit you grant us a non-exclusive, worldwide, royalty-free licence to host, store and display that content inside the app so other users can see it. That licence ends when the content is deleted, except for copies already made by other users or retained in backups for a reasonable period.</p>
+<p>Only post content you have the right to post.</p>
+
+<h2>Community rules</h2>
+<div class="callout">
+<p><strong>There is zero tolerance for objectionable content and for abusive behaviour.</strong> Content that breaks these rules is removed, and accounts that post it lose access — on a first offence, if it is serious enough.</p>
+</div>
+<p>Do not post:</p>
+<ul>
+  <li>Nudity, sexual or pornographic content, or images focused on intimate body parts. Ordinary swimwear and beachwear are fine; exposed genitals, buttocks or female nipples are not.</li>
+  <li>Sexual content involving minors of any kind, or any image of a child that a reasonable person would find exploitative. We report this to the authorities.</li>
+  <li>Content that is unlawful, hateful, harassing, violent, threatening, defamatory or deceptive.</li>
+  <li>Photographs of other people taken or shared without their consent.</li>
+  <li>Content that infringes anyone's copyright, trademark or privacy rights.</li>
+  <li>Spam, advertising, or content posted to manipulate votes.</li>
+</ul>
+<p>Do not attempt to scrape the service, circumvent the photo checks described below, or interfere with the app's operation.</p>
+
+<h2>How photos are checked</h2>
+<p>Every photo attached to a community post is screened automatically before anyone else can see it: once on your device, using Apple's on-device Sensitive Content Analysis, and again after upload, using Google Cloud Vision. A photo that fails either check is not published, and one that fails the second check is deleted. Posts appear without their photo until the second check finishes.</p>
+<p>Automated screening is not perfect in either direction. It may block a photo that was fine, and it may miss something it should have caught. Blocking a photo is not an accusation; it means an automated classifier was not confident, and you are welcome to post a different photo.</p>
+
+<h2>Reporting content, and what we do about it</h2>
+<p>If you see something that breaks these rules, email <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> with enough detail to find the post — the display name and roughly when it appeared is usually plenty.</p>
+<p>We aim to review every report within 24 hours. If the content breaks these rules we remove it, and we suspend or terminate the account that posted it. We will tell you what we decided if you ask.</p>
+
+<h2>Availability</h2>
+<p>The app is provided as it is. We may change, suspend or discontinue features, and we do not promise uninterrupted or error-free operation. Some features depend on third-party services that may themselves change or become unavailable.</p>
+
+<h2>Ending things</h2>
+<p>You may stop using the app and delete your account at any time from Settings. We may terminate or suspend access if these terms are breached. The deletion screen explains exactly what is removed and what is retained.</p>
+
+<h2>Disclaimers and liability</h2>
+<p>To the fullest extent the law allows, the app is provided without warranties of any kind, and we are not liable for indirect or consequential loss arising from your use of it. Nothing here limits liability that cannot lawfully be limited, including for death or personal injury caused by negligence, or your statutory consumer rights.</p>
+
+<h2>Apple</h2>
+<p>This agreement is between you and the Weatherized team, not with Apple, and Apple is not responsible for the app or its content. Apple has no obligation to provide support for the app. If the app fails to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price, if any; to the maximum extent permitted by law, Apple has no other warranty obligation with respect to the app. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them against you.</p>
+
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of Spain, without affecting any mandatory consumer protections available to you where you live.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a></p>
+
+</article>
+
+<!-- ======================= ESPAÑOL ======================= -->
+<article data-lang="es" hidden>
+
+<h1>Términos del servicio</h1>
+<p class="effective">En vigor desde el 10 de septiembre de 2026</p>
+
+<p class="intro">Estos términos son el acuerdo entre tú y el equipo de Weatherized para el uso de Weatherized. Al usar la app, los aceptas.</p>
+
+<h2>Qué hace la app</h2>
+<p>Weatherized sugiere qué ponerte a partir de un pronóstico del tiempo y del armario que le describes. Las sugerencias son eso: sugerencias. No son recomendaciones de seguridad ni sustituyen tu propio criterio sobre las condiciones del lugar donde estés.</p>
+
+<h2>Información meteorológica</h2>
+<p>Los pronósticos proceden de Apple Weather a través de WeatherKit. Un pronóstico es una predicción y a menudo se equivoca. No dependas de esta app para decisiones en las que el tiempo pueda afectar a tu seguridad: consulta un servicio meteorológico oficial.</p>
+<p>Cuando no se puede obtener un pronóstico, la app etiqueta claramente lo que muestra como pronóstico simulado. Los pronósticos simulados son solo ilustrativos y no guardan ninguna relación con las condiciones reales.</p>
+
+<h2>Las funciones de salud no son consejo médico</h2>
+<p>Las sugerencias según el ciclo ajustan únicamente el abrigo de la ropa. No son un método anticonceptivo, ni una herramienta de diagnóstico, ni consejo médico. No uses esta app para tomar decisiones de salud. Consulta a un profesional cualificado.</p>
+
+<h2>Tu cuenta</h2>
+<p>Guarda tu contraseña y avísanos si crees que alguien más la tiene. Eres responsable de lo que ocurra con tu cuenta. Debes tener edad suficiente para celebrar un contrato vinculante donde vives y al menos 13 años, o la edad mínima de tu país si es superior.</p>
+
+<h2>Tu contenido</h2>
+<p>Conservas la propiedad de todo lo que publicas. Al compartir un look nos concedes una licencia no exclusiva, mundial y gratuita para alojar, almacenar y mostrar ese contenido dentro de la app para que otras personas puedan verlo. Esa licencia termina cuando se elimina el contenido, salvo por las copias ya hechas por otras personas o conservadas en copias de seguridad durante un periodo razonable.</p>
+<p>Publica solo contenido que tengas derecho a publicar.</p>
+
+<h2>Normas de la comunidad</h2>
+<div class="callout">
+<p><strong>Hay tolerancia cero con el contenido objetable y con el comportamiento abusivo.</strong> El contenido que incumpla estas normas se elimina, y las cuentas que lo publiquen pierden el acceso, incluso a la primera si es lo bastante grave.</p>
+</div>
+<p>No publiques:</p>
+<ul>
+  <li>Desnudos, contenido sexual o pornográfico, ni imágenes centradas en partes íntimas del cuerpo. El bañador y la ropa de playa habituales están bien; los genitales, las nalgas o los pezones femeninos a la vista, no.</li>
+  <li>Contenido sexual que implique a menores de ningún tipo, ni ninguna imagen de un menor que una persona razonable consideraría de explotación. Esto lo denunciamos a las autoridades.</li>
+  <li>Contenido ilegal, de odio, acosador, violento, amenazante, difamatorio o engañoso.</li>
+  <li>Fotografías de otras personas tomadas o compartidas sin su consentimiento.</li>
+  <li>Contenido que infrinja derechos de autor, marcas o la privacidad de terceros.</li>
+  <li>Spam, publicidad o contenido publicado para manipular los votos.</li>
+</ul>
+<p>No intentes extraer datos del servicio, eludir las comprobaciones de fotos descritas abajo ni interferir en el funcionamiento de la app.</p>
+
+<h2>Cómo se revisan las fotos</h2>
+<p>Cada foto adjunta a una publicación de la comunidad se revisa automáticamente antes de que nadie más pueda verla: una vez en tu dispositivo, con el análisis de contenido sensible de Apple, y otra vez tras la subida, con Google Cloud Vision. Una foto que no supere cualquiera de las dos comprobaciones no se publica, y la que no supere la segunda se elimina. Las publicaciones aparecen sin su foto hasta que termina la segunda comprobación.</p>
+<p>La revisión automática no es perfecta en ninguno de los dos sentidos. Puede bloquear una foto que estaba bien y puede dejar pasar algo que debería haber detectado. Bloquear una foto no es una acusación: significa que un clasificador automático no estaba seguro, y puedes publicar otra foto sin problema.</p>
+
+<h2>Denunciar contenido y qué hacemos</h2>
+<p>Si ves algo que incumple estas normas, escribe a <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> con detalle suficiente para localizar la publicación: el nombre visible y aproximadamente cuándo apareció suele bastar.</p>
+<p>Nuestro objetivo es revisar cada denuncia en un plazo de 24 horas. Si el contenido incumple estas normas, lo eliminamos y suspendemos o cancelamos la cuenta que lo publicó. Si lo pides, te contamos qué decidimos.</p>
+
+<h2>Disponibilidad</h2>
+<p>La app se ofrece tal cual. Podemos cambiar, suspender o retirar funciones, y no garantizamos un funcionamiento ininterrumpido o sin errores. Algunas funciones dependen de servicios de terceros que pueden cambiar o dejar de estar disponibles.</p>
+
+<h2>Finalizar</h2>
+<p>Puedes dejar de usar la app y eliminar tu cuenta cuando quieras desde Ajustes. Podemos cancelar o suspender el acceso si se incumplen estos términos. La pantalla de eliminación explica exactamente qué se elimina y qué se conserva.</p>
+
+<h2>Exención de responsabilidad</h2>
+<p>En la máxima medida permitida por la ley, la app se ofrece sin garantías de ningún tipo y no respondemos por daños indirectos o consecuentes derivados de su uso. Nada de lo aquí dispuesto limita la responsabilidad que no pueda limitarse legalmente, incluida la derivada de muerte o daños personales causados por negligencia, ni tus derechos como consumidor.</p>
+
+<h2>Apple</h2>
+<p>Este acuerdo es entre tú y el equipo de Weatherized, no con Apple, y Apple no es responsable de la app ni de su contenido. Apple no tiene obligación de prestar soporte para la app. Si la app no cumple alguna garantía aplicable, puedes notificarlo a Apple y Apple te reembolsará el precio de compra, si lo hubiera; en la máxima medida permitida por la ley, Apple no tiene ninguna otra obligación de garantía respecto de la app. Apple y sus filiales son terceros beneficiarios de estos términos y pueden hacerlos valer frente a ti.</p>
+
+<h2>Ley aplicable</h2>
+<p>Estos términos se rigen por la legislación de España, sin perjuicio de las protecciones imperativas de consumo que te correspondan donde vives.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:gaston.coinbase@gmail.com">gaston.coinbase@gmail.com</a></p>
+
+</article>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span data-lang="en">Weatherized · Terms of Service</span>
+    <span data-lang="es" hidden>Weatherized · Términos del servicio</span>
+    <a href="Privacy-Policy.html"><span data-lang="en">Privacy Policy</span><span data-lang="es" hidden>Política de privacidad</span></a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var TITLES = { en: "Terms of Service — Weatherized", es: "Términos del servicio — Weatherized" };
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = TITLES[lang] || TITLES.en;
+    document.querySelectorAll("[data-lang]").forEach(function (el) {
+      el.hidden = el.getAttribute("data-lang") !== lang;
+    });
+    document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
+    });
+  }
+
+  function preferred() {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q) return q.slice(0, 2).toLowerCase() === "es" ? "es" : "en";
+    if (location.hash === "#es") return "es";
+    if (location.hash === "#en") return "en";
+    try {
+      var saved = localStorage.getItem("wz-legal-lang");
+      if (saved === "es" || saved === "en") return saved;
+    } catch (e) {}
+    return (navigator.language || "en").toLowerCase().indexOf("es") === 0 ? "es" : "en";
+  }
+
+  document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var lang = b.getAttribute("data-set-lang");
+      try { localStorage.setItem("wz-legal-lang", lang); } catch (e) {}
+      apply(lang);
+    });
+  });
+
+  apply(preferred());
+})();
+</script>
+
+</body>
+</html>

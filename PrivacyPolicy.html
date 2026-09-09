@@ -1,0 +1,420 @@
+<!doctype html>
+<!--
+  ============================================================================
+  BEFORE YOU PUBLISH THIS FILE — replace every placeholder below.
+  The same values appear in Weatherized/Features/Settings/LegalDocuments.swift
+  (LegalConfiguration); keep the two in step or the in-app text and the hosted
+  text will disagree, which reviewers do notice.
+
+    1. gaston.coinbase@gmail.com -> a mailbox you actually read. App Store
+                                   Guideline 1.2 requires published contact
+                                   information for an app with user content.
+    2. the Weatherized team     -> the legal entity that operates the app
+                                   (appears in the Terms, not here).
+    3. 10 September 2026        -> the date you publish, if it is not today.
+
+  Hosting: any static host works (GitHub Pages, Cloudflare Pages, Netlify, an
+  S3 bucket). App Store Connect needs a public HTTPS URL that loads without a
+  login. Give the English URL for the English localization and append ?lang=es
+  for the Spanish one — this page reads that parameter.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Weatherized</title>
+<meta name="description" content="How Weatherized handles your data: what stays on your iPhone, what syncs, and what is never collected.">
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --ink: #16181d;
+  --ink-soft: #4a4f5a;
+  --ink-faint: #767c88;
+  --rule: #e3e6eb;
+  --accent: #2f6fd0;
+  --accent-soft: #eaf1fc;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --card: #171a20;
+    --ink: #eceef2;
+    --ink-soft: #b6bcc7;
+    --ink-faint: #858c99;
+    --rule: #272b33;
+    --accent: #7fb0ff;
+    --accent-soft: #1a2333;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.topbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--card);
+}
+
+.topbar-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.brand svg { width: 26px; height: 26px; flex: none; }
+
+.langswitch {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.langswitch button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.langswitch button[aria-pressed="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 40px 22px 64px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.effective {
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  margin: 0 0 28px;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  margin: 0 0 40px;
+}
+
+h2 {
+  font-size: 1.18rem;
+  letter-spacing: -0.01em;
+  margin: 40px 0 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+
+h2:first-of-type { border-top: 0; padding-top: 0; }
+
+p { margin: 0 0 14px; }
+
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+a { color: var(--accent); }
+
+strong { font-weight: 650; }
+
+.callout {
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 0 0 14px;
+}
+
+.callout p:last-child { margin-bottom: 0; }
+
+footer {
+  border-top: 1px solid var(--rule);
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+}
+
+.footer-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+[hidden] { display: none !important; }
+
+@media print {
+  .topbar, footer { display: none; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  main { padding: 0; max-width: none; }
+  h2 { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="21" cy="12" r="6" fill="#f5c34b"/>
+        <path d="M9 24a5.5 5.5 0 0 1 .6-11 7.5 7.5 0 0 1 14.2 2A4.6 4.6 0 0 1 23 24z" fill="#cfd8e6"/>
+      </svg>
+      <span>Weatherized</span>
+    </div>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-set-lang="es" aria-pressed="false">Español</button>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ======================= ENGLISH ======================= -->
+<article data-lang="en">
+
+<h1>Privacy Policy</h1>
+<p class="effective">Effective 10 September 2026</p>
+
+<p class="intro">This policy explains what Weatherized collects, why, and what it never collects. It is written to be read, not to be skimmed past.</p>
+
+<h2>What stays on your device, always</h2>
+<p>Photos of your clothes never leave your iPhone. They are stored in the app's private storage and are not uploaded, backed up to our servers, or shared. When a garment's details are synced, the photo's file name is removed first, because it means nothing to any other device.</p>
+<p>Health data read from Apple Health — see below — is also never uploaded. It is used on the device to adjust a suggestion and is not stored anywhere else.</p>
+
+<h2>Account information</h2>
+<p>If you create an account, your email address and password are handled by Firebase Authentication, a Google service. We never see or store your password.</p>
+<p>Signing in with Apple or with Google uses those providers' own flows; we receive only the identifier and, if you allow it, an email address and display name. If you choose Apple's private relay address, that is what we get, and it is all we get.</p>
+
+<h2>Wardrobe and preferences</h2>
+<p>When you are signed in, the details of your wardrobe — item names, categories, colours, warmth, water resistance, quantity, and how recently you wore something — sync to Cloud Firestore so they survive a lost phone and appear on your other devices. Your preferences (units, language, style, how you feel the cold, reminder schedule) sync the same way.</p>
+
+<h2>Location</h2>
+<p>With your permission, the app uses your approximate location to look up the weather. Coordinates are sent to Apple's WeatherKit service to retrieve a forecast, and to Apple's geocoder to turn them into a city name. Your location is not stored on our servers and is not used to build a movement history.</p>
+<p>If you would rather not share location, choose a city manually in Settings. The app works exactly the same way.</p>
+
+<h2>Health data (menstrual cycle)</h2>
+<p>If you turn on cycle-aware suggestions, the app asks Apple Health for permission to read menstrual flow entries. It uses them only to work out roughly where you are in your cycle, because body temperature and comfort change across it, and to nudge the warmth of a suggestion.</p>
+<div class="callout">
+<p>This data is read on demand, used on the device, and <strong>never written to our servers, never attached to a shared outfit, never used for advertising, and never sold or disclosed to anyone.</strong> You can revoke access at any time in the Health app or by turning the setting off. Turning it off stops all reading immediately.</p>
+</div>
+
+<h2>Community content</h2>
+<p>Anything you deliberately share to the community — the outfit, the weather it was chosen for, the city name, your caption, your display name, and a photo if you attach one — is public to other signed-in users of the app. Your votes and comments are stored with your account identifier. Attached photos are stored in Firebase Storage.</p>
+<p>Please don't post anything you would not be comfortable being seen publicly.</p>
+
+<h2>How shared photos are checked</h2>
+<p>Photos attached to a community post are screened for nudity and sexually explicit content before anyone else can see them. This happens in two stages.</p>
+<ul>
+  <li><strong>On your iPhone, before upload.</strong> The photo is analysed by Apple's Sensitive Content Analysis framework, which runs entirely on the device. The image is not sent anywhere for this check, and the result is not reported to us or to Apple. If the check flags the photo, it is discarded and never uploaded. If the check cannot run — for example because Sensitive Content Warning is switched off in iOS Settings — the app declines to attach the photo and tells you why.</li>
+  <li><strong>After upload, before the photo appears.</strong> The uploaded image is analysed automatically by Google Cloud Vision's SafeSearch service. Until that finishes, the post appears in the feed without its photo. If the image is judged to contain adult content it is deleted from storage and the post keeps only its text. Ordinary swimwear and beachwear are not treated as adult content.</li>
+</ul>
+<p>These checks are automated. No person at Weatherized looks at your photo as part of the routine screening; a human only reviews an image if it is reported to us or if we are investigating a specific complaint.</p>
+
+<h2>Notifications</h2>
+<p>The daily reminder is scheduled and delivered on your device. Its contents — the forecast and the suggested outfit — are produced on the device and are not sent through any server.</p>
+
+<h2>Who else is involved</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Storage) stores account and synced data on our behalf.</li>
+  <li><strong>Google Cloud Vision</strong> analyses photos attached to community posts, for the safety check described above, and only those photos.</li>
+  <li><strong>Apple WeatherKit</strong> supplies the forecast. Apple's own privacy terms apply to that request.</li>
+  <li><strong>Apple Sign in with Apple</strong> and <strong>Google Sign-In</strong>, if you use them to sign in.</li>
+  <li><strong>Apple Health</strong> data is never transmitted to anyone.</li>
+</ul>
+<p>The app contains no advertising and no third-party analytics or tracking SDKs. We do not track you across other companies' apps or websites, and we do not sell or share personal information as those terms are used in United States state privacy laws.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>You can delete your account at any time from Settings → Delete my account. That permanently removes your sign-in from Firebase Authentication.</p>
+<div class="callout">
+<p>Please note what deletion does not do: your posts, comments and votes — including the display name shown on them — remain in the community, and your synced wardrobe details are retained. This is described on the deletion screen before you confirm. If you want your community content removed as well, delete the individual posts first, or write to us at <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> and we will remove it.</p>
+</div>
+<p>Your wardrobe and photos on the device are yours; deleting the app removes them.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, export or erase your personal data, to object to certain processing, and to complain to a data protection authority. Write to <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> and we will respond. We do not charge for this and we will not treat you differently for asking.</p>
+
+<h2>Children</h2>
+<p>Weatherized is not directed at children and we do not knowingly collect data from anyone under 13, or under the minimum age in your country. If you believe a child has given us personal information, write to us and we will delete it.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes in a way that matters, the app will tell you before the change takes effect. The date at the top always reflects the current version.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="mailto:gaston.coinbase@gmail.com">gaston.coinbase@gmail.com</a></p>
+
+</article>
+
+<!-- ======================= ESPAÑOL ======================= -->
+<article data-lang="es" hidden>
+
+<h1>Política de privacidad</h1>
+<p class="effective">En vigor desde el 10 de septiembre de 2026</p>
+
+<p class="intro">Esta política explica qué recopila Weatherized, por qué, y qué no recopila nunca. Está escrita para leerse, no para pasarla por alto.</p>
+
+<h2>Lo que nunca sale de tu dispositivo</h2>
+<p>Las fotos de tu ropa nunca salen de tu iPhone. Se guardan en el almacenamiento privado de la app y no se suben, ni se copian a nuestros servidores, ni se comparten. Cuando se sincronizan los detalles de una prenda, primero se elimina el nombre del archivo de la foto, porque no significa nada para ningún otro dispositivo.</p>
+<p>Los datos de salud leídos de Apple Salud —ver más abajo— nunca se suben. Se usan en el dispositivo para ajustar una sugerencia y no se guardan en ningún otro sitio.</p>
+
+<h2>Información de la cuenta</h2>
+<p>Si creas una cuenta, tu correo electrónico y tu contraseña los gestiona Firebase Authentication, un servicio de Google. Nosotros nunca vemos ni almacenamos tu contraseña.</p>
+<p>Iniciar sesión con Apple o con Google utiliza los flujos propios de esos proveedores; nosotros recibimos únicamente el identificador y, si lo permites, un correo electrónico y un nombre visible. Si eliges la dirección privada de Apple, eso es lo que recibimos y es todo lo que recibimos.</p>
+
+<h2>Armario y preferencias</h2>
+<p>Cuando has iniciado sesión, los detalles de tu armario —nombres, categorías, colores, abrigo, resistencia al agua, cantidad y cuándo usaste algo por última vez— se sincronizan con Cloud Firestore para que sobrevivan a un móvil perdido y aparezcan en tus otros dispositivos. Tus preferencias (unidades, idioma, estilo, cómo llevas el frío, horario del recordatorio) se sincronizan igual.</p>
+
+<h2>Ubicación</h2>
+<p>Con tu permiso, la app usa tu ubicación aproximada para consultar el tiempo. Las coordenadas se envían a WeatherKit de Apple para obtener el pronóstico y al geocodificador de Apple para convertirlas en el nombre de una ciudad. Tu ubicación no se guarda en nuestros servidores ni se usa para construir un historial de movimientos.</p>
+<p>Si prefieres no compartir la ubicación, elige una ciudad manualmente en Ajustes. La app funciona exactamente igual.</p>
+
+<h2>Datos de salud (ciclo menstrual)</h2>
+<p>Si activas las sugerencias según el ciclo, la app pide permiso a Apple Salud para leer los registros de flujo menstrual. Los usa únicamente para estimar en qué punto del ciclo estás, porque la temperatura corporal y la sensación de confort cambian a lo largo de él, y para ajustar el abrigo de una sugerencia.</p>
+<div class="callout">
+<p>Estos datos se leen bajo demanda, se usan en el dispositivo y <strong>nunca se escriben en nuestros servidores, nunca se adjuntan a un look compartido, nunca se usan con fines publicitarios y nunca se venden ni se comunican a nadie.</strong> Puedes revocar el acceso cuando quieras desde la app Salud o desactivando el ajuste. Al desactivarlo, la lectura se detiene de inmediato.</p>
+</div>
+
+<h2>Contenido de la comunidad</h2>
+<p>Todo lo que compartes deliberadamente en la comunidad —el look, el tiempo para el que se eligió, el nombre de la ciudad, tu texto, tu nombre visible y una foto si la adjuntas— es público para el resto de personas registradas en la app. Tus votos y comentarios se guardan junto al identificador de tu cuenta. Las fotos adjuntas se guardan en Firebase Storage.</p>
+<p>No publiques nada que no te resulte cómodo que se vea públicamente.</p>
+
+<h2>Cómo se revisan las fotos compartidas</h2>
+<p>Las fotos que adjuntas a una publicación de la comunidad se analizan en busca de desnudos y contenido sexual explícito antes de que nadie más pueda verlas. Esto ocurre en dos fases.</p>
+<ul>
+  <li><strong>En tu iPhone, antes de subirla.</strong> La foto se analiza con el marco Sensitive Content Analysis de Apple, que se ejecuta íntegramente en el dispositivo. La imagen no se envía a ninguna parte para esta comprobación y el resultado no se comunica ni a nosotros ni a Apple. Si la comprobación marca la foto, se descarta y no se sube nunca. Si la comprobación no puede ejecutarse —por ejemplo, porque el Aviso de contenido sensible está desactivado en los Ajustes de iOS—, la app se niega a adjuntar la foto y te explica por qué.</li>
+  <li><strong>Tras la subida, antes de que la foto aparezca.</strong> La imagen subida se analiza automáticamente con el servicio SafeSearch de Google Cloud Vision. Hasta que termina, la publicación aparece en el muro sin su foto. Si se considera que la imagen contiene contenido para adultos, se elimina del almacenamiento y la publicación conserva solo su texto. El bañador y la ropa de playa habituales no se consideran contenido para adultos.</li>
+</ul>
+<p>Estas comprobaciones son automáticas. Ninguna persona de Weatherized mira tu foto como parte de la revisión rutinaria; solo se revisa manualmente una imagen si nos la denuncian o si estamos investigando una queja concreta.</p>
+
+<h2>Notificaciones</h2>
+<p>El recordatorio diario se programa y se entrega en tu dispositivo. Su contenido —el pronóstico y el look sugerido— se genera en el dispositivo y no pasa por ningún servidor.</p>
+
+<h2>Quién más interviene</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Storage) almacena los datos de cuenta y sincronizados en nuestro nombre.</li>
+  <li><strong>Google Cloud Vision</strong> analiza las fotos adjuntas a las publicaciones de la comunidad, para la comprobación de seguridad descrita arriba, y solo esas fotos.</li>
+  <li><strong>Apple WeatherKit</strong> proporciona el pronóstico. A esa consulta se le aplican las condiciones de privacidad de Apple.</li>
+  <li><strong>Iniciar sesión con Apple</strong> y <strong>Google Sign-In</strong>, si los usas para acceder.</li>
+  <li>Los datos de <strong>Apple Salud</strong> no se transmiten nunca a nadie.</li>
+</ul>
+<p>La app no tiene publicidad ni SDK de analítica o seguimiento de terceros. No te rastreamos a través de apps o sitios web de otras empresas, y no vendemos ni compartimos información personal en el sentido que dan a esos términos las leyes de privacidad de los estados de EE. UU.</p>
+
+<h2>Conservación y eliminación</h2>
+<p>Puedes eliminar tu cuenta cuando quieras desde Ajustes → Eliminar mi cuenta. Eso elimina permanentemente tu acceso de Firebase Authentication.</p>
+<div class="callout">
+<p>Ten en cuenta lo que la eliminación no hace: tus publicaciones, comentarios y votos —incluido el nombre que aparece en ellos— permanecen en la comunidad, y los detalles sincronizados de tu armario se conservan. Esto se explica en la pantalla de eliminación antes de que confirmes. Si también quieres que se elimine tu contenido de la comunidad, borra primero las publicaciones o escríbenos a <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> y lo eliminaremos.</p>
+</div>
+<p>Tu armario y tus fotos del dispositivo son tuyos; al desinstalar la app se eliminan.</p>
+
+<h2>Tus derechos</h2>
+<p>Según dónde vivas, puedes tener derecho a acceder, corregir, exportar o eliminar tus datos personales, a oponerte a determinados tratamientos y a reclamar ante una autoridad de protección de datos. Escríbenos a <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a> y te responderemos. No cobramos por ello y no te trataremos de forma distinta por pedirlo.</p>
+
+<h2>Menores</h2>
+<p>Weatherized no está dirigida a menores y no recopilamos conscientemente datos de personas menores de 13 años, o de la edad mínima que se aplique en tu país. Si crees que un menor nos ha facilitado información personal, escríbenos y la eliminaremos.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia de forma relevante, la app te lo indicará antes de que el cambio entre en vigor. La fecha de la parte superior siempre refleja la versión actual.</p>
+
+<h2>Contacto</h2>
+<p>Dudas o solicitudes: <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a></p>
+
+</article>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span data-lang="en">Weatherized · Privacy Policy</span>
+    <span data-lang="es" hidden>Weatherized · Política de privacidad</span>
+    <a href="Terms-of-Service.html"><span data-lang="en">Terms of Service</span><span data-lang="es" hidden>Términos del servicio</span></a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var TITLES = { en: "Privacy Policy — Weatherized", es: "Política de privacidad — Weatherized" };
+
+  function apply(lang) {
+    document.documentElement.lang = lang;
+    document.title = TITLES[lang] || TITLES.en;
+    document.querySelectorAll("[data-lang]").forEach(function (el) {
+      el.hidden = el.getAttribute("data-lang") !== lang;
+    });
+    document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
+    });
+  }
+
+  function preferred() {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q) return q.slice(0, 2).toLowerCase() === "es" ? "es" : "en";
+    if (location.hash === "#es") return "es";
+    if (location.hash === "#en") return "en";
+    try {
+      var saved = localStorage.getItem("wz-legal-lang");
+      if (saved === "es" || saved === "en") return saved;
+    } catch (e) {}
+    return (navigator.language || "en").toLowerCase().indexOf("es") === 0 ? "es" : "en";
+  }
+
+  document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var lang = b.getAttribute("data-set-lang");
+      try { localStorage.setItem("wz-legal-lang", lang); } catch (e) {}
+      apply(lang);
+    });
+  });
+
+  apply(preferred());
+})();
+</script>
+
+</body>
+</html>
