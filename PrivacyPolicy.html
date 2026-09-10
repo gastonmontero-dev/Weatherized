@@ -251,12 +251,13 @@ footer {
 <p>Please don't post anything you would not be comfortable being seen publicly.</p>
 
 <h2>How shared photos are checked</h2>
-<p>Photos attached to a community post are screened for nudity and sexually explicit content before anyone else can see them. This happens in two stages.</p>
+<p>Photos attached to a community post are screened for nudity and sexually explicit content before anyone else can see them. This happens in two stages, and a photo has to pass both.</p>
 <ul>
-  <li><strong>On your iPhone, before upload.</strong> The photo is analysed by Apple's Sensitive Content Analysis framework, which runs entirely on the device. The image is not sent anywhere for this check, and the result is not reported to us or to Apple. If the check flags the photo, it is discarded and never uploaded. If the check cannot run — for example because Sensitive Content Warning is switched off in iOS Settings — the app declines to attach the photo and tells you why.</li>
-  <li><strong>After upload, before the photo appears.</strong> The uploaded image is analysed automatically by Google Cloud Vision's SafeSearch service. Until that finishes, the post appears in the feed without its photo. If the image is judged to contain adult content it is deleted from storage and the post keeps only its text. Ordinary swimwear and beachwear are not treated as adult content.</li>
+  <li><strong>On your iPhone, before upload.</strong> The photo is analysed by Apple's Sensitive Content Analysis framework, which runs entirely on the device. The image is not sent anywhere for this check, and the result is not reported to us or to Apple. If the check flags the photo, it is discarded and never uploaded. If the check cannot run — for example because Sensitive Content Warning is switched off in iOS Settings — the app declines to attach the photo and tells you why, rather than uploading something it could not check.</li>
+  <li><strong>After upload, before the photo appears.</strong> The uploaded image is analysed automatically by Google Cloud Vision's SafeSearch service. Until that finishes, your post appears in the community without its photo. If the image is judged to contain adult content, it is deleted from storage and the post keeps only its text. Ordinary swimwear and beachwear are not treated as adult content.</li>
 </ul>
-<p>These checks are automated. No person at Weatherized looks at your photo as part of the routine screening; a human only reviews an image if it is reported to us or if we are investigating a specific complaint.</p>
+<p>Both checks are automated. No person at Weatherized looks at your photo as part of this routine screening. We review an image by hand only if it is reported to us, or if we are investigating a specific complaint, and we can remove any photo from the community.</p>
+<p>The photo you upload is sent to Google Cloud Vision only for this check. It is not used to train anyone's models, is not retained by that service after the check, and is not used for any other purpose.</p>
 
 <h2>Notifications</h2>
 <p>The daily reminder is scheduled and delivered on your device. Its contents — the forecast and the suggested outfit — are produced on the device and are not sent through any server.</p>
@@ -288,7 +289,7 @@ footer {
 <p>If this policy changes in a way that matters, the app will tell you before the change takes effect. The date at the top always reflects the current version.</p>
 
 <h2>Contact</h2>
-<p>Questions or requests: <a href="mailto:gaston.coinbase@gmail.com">gaston.coinbase@gmail.com</a></p>
+<p>Questions or requests: <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a></p>
 
 </article>
 
@@ -326,12 +327,13 @@ footer {
 <p>No publiques nada que no te resulte cómodo que se vea públicamente.</p>
 
 <h2>Cómo se revisan las fotos compartidas</h2>
-<p>Las fotos que adjuntas a una publicación de la comunidad se analizan en busca de desnudos y contenido sexual explícito antes de que nadie más pueda verlas. Esto ocurre en dos fases.</p>
+<p>Las fotos que adjuntas a una publicación de la comunidad se analizan en busca de desnudos y contenido sexual explícito antes de que nadie más pueda verlas. Esto ocurre en dos fases, y la foto debe superar las dos.</p>
 <ul>
-  <li><strong>En tu iPhone, antes de subirla.</strong> La foto se analiza con el marco Sensitive Content Analysis de Apple, que se ejecuta íntegramente en el dispositivo. La imagen no se envía a ninguna parte para esta comprobación y el resultado no se comunica ni a nosotros ni a Apple. Si la comprobación marca la foto, se descarta y no se sube nunca. Si la comprobación no puede ejecutarse —por ejemplo, porque el Aviso de contenido sensible está desactivado en los Ajustes de iOS—, la app se niega a adjuntar la foto y te explica por qué.</li>
-  <li><strong>Tras la subida, antes de que la foto aparezca.</strong> La imagen subida se analiza automáticamente con el servicio SafeSearch de Google Cloud Vision. Hasta que termina, la publicación aparece en el muro sin su foto. Si se considera que la imagen contiene contenido para adultos, se elimina del almacenamiento y la publicación conserva solo su texto. El bañador y la ropa de playa habituales no se consideran contenido para adultos.</li>
+  <li><strong>En tu iPhone, antes de subirla.</strong> La foto se analiza con el marco Sensitive Content Analysis de Apple, que se ejecuta íntegramente en el dispositivo. La imagen no se envía a ninguna parte para esta comprobación y el resultado no se comunica ni a nosotros ni a Apple. Si la comprobación marca la foto, se descarta y no se sube nunca. Si no puede ejecutarse —por ejemplo, porque el Aviso de contenido sensible está desactivado en los Ajustes de iOS—, la app se niega a adjuntar la foto y te explica por qué, en lugar de subir algo que no ha podido comprobar.</li>
+  <li><strong>Tras la subida, antes de que la foto aparezca.</strong> La imagen subida se analiza automáticamente con el servicio SafeSearch de Google Cloud Vision. Hasta que termina, tu publicación aparece en la comunidad sin su foto. Si se considera que la imagen contiene contenido para adultos, se elimina del almacenamiento y la publicación conserva solo su texto. El bañador y la ropa de playa habituales no se consideran contenido para adultos.</li>
 </ul>
-<p>Estas comprobaciones son automáticas. Ninguna persona de Weatherized mira tu foto como parte de la revisión rutinaria; solo se revisa manualmente una imagen si nos la denuncian o si estamos investigando una queja concreta.</p>
+<p>Ambas comprobaciones son automáticas. Ninguna persona de Weatherized mira tu foto como parte de esta revisión rutinaria. Revisamos una imagen manualmente solo si nos la denuncian o si estamos investigando una queja concreta, y podemos retirar cualquier foto de la comunidad.</p>
+<p>La foto que subes se envía a Google Cloud Vision únicamente para esta comprobación. No se usa para entrenar los modelos de nadie, ese servicio no la conserva después de la comprobación y no se utiliza para ningún otro fin.</p>
 
 <h2>Notificaciones</h2>
 <p>El recordatorio diario se programa y se entrega en tu dispositivo. Su contenido —el pronóstico y el look sugerido— se genera en el dispositivo y no pasa por ningún servidor.</p>
@@ -363,7 +365,7 @@ footer {
 <p>Si esta política cambia de forma relevante, la app te lo indicará antes de que el cambio entre en vigor. La fecha de la parte superior siempre refleja la versión actual.</p>
 
 <h2>Contacto</h2>
-<p>Dudas o solicitudes: <a href="mailto:privacy@weatherized.app">privacy@weatherized.app</a></p>
+<p>Dudas o solicitudes: <a href="mailto:gaston.coinbase@gmail.com">gaston.coinbase@gmail.com</a></p>
 
 </article>
 
@@ -418,3 +420,4 @@ footer {
 
 </body>
 </html>
+
